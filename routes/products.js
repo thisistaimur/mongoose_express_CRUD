@@ -7,9 +7,9 @@ module.exports = () => {
     router.get("/", products.get);
     router.get("/:articleNo", products.getOne);
     router.post("/", [
-        check('articleNo').isNumeric(),
-        check('name').isNumeric(),
-        check('description').isNumeric(),
+        check('articleNo').isString(),
+        check('name').isString(),
+        check('description').isString(),
         check('price').isNumeric()
       ], products.create);
     router.put("/:articleNo", products.update);
