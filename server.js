@@ -22,5 +22,5 @@ app.get("/",function(req,res) {
 app.use(errorHandlerMiddleware);
 
 
-const port = process.env.port || 3000;
-app.listen(port, () => console.log(`server listening on port ${port}`));
+//const port = process.env.port || 3000;
+app.listen(80, () => console.log(`server listening on port ${port}`));
